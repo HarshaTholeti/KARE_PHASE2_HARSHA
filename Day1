@@ -7,3 +7,14 @@ public class Main{
 
 Output:
 cse "KARE" students
+
+
+// To print the output as \n.
+public class Main{
+    public static void main(String args[]){
+        System.out.print("\\n");
+    }
+}
+
+Output:
+\n
