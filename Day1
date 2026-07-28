@@ -86,3 +86,20 @@ Output:
 Enter the float value:
 100.9182
 100.92
+
+
+// program to get a double input from user and print it.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the float value:");
+        double d= sc.nextDouble();
+        System.out.print(d);
+    }
+}
+
+Output:
+Enter the float value:
+100.91821
+100.91821
