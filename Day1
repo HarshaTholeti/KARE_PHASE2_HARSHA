@@ -18,3 +18,20 @@ public class Main{
 
 Output:
 \n
+
+
+//Take the input from user and print the same.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int n = sc.nextInt();
+        System.out.println(n);
+    }
+}
+
+Output:
+Enter the number:
+4
+4
