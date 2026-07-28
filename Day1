@@ -35,3 +35,54 @@ Output:
 Enter the number:
 4
 4
+
+
+//Take the float value as input from the user
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the float value:");
+        float f = sc.nextFloat();
+        System.out.println(f);
+    }
+}
+
+Output:
+Enter the float value:
+10.5
+10.5
+
+
+// Take the character as input from the user
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the float value:");
+        char c= sc.next().charAt(0);
+        System.out.println(c);
+    }
+}
+
+Output:
+Enter the float value:
+a
+a
+
+
+//program to print the float value with 2 decimals
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the float value:");
+        float n = sc.nextFloat();
+        System.out.printf("%.2f",n);
+    }
+}
+
+Output:
+Enter the float value:
+100.9182
+100.92
