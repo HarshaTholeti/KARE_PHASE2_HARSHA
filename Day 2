@@ -19,3 +19,17 @@ Output:
 99
 98
 100 98 98 99 97 99
+
+
+//program for conditional statement - if/else.
+public class Main{
+    public static void main(String args[]){
+        if(true)
+        System.out.println("hi");
+        else
+        System.out.println("hello");
+    }
+}
+
+Output:
+hi
