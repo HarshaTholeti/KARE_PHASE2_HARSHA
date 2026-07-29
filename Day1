@@ -103,3 +103,20 @@ Output:
 Enter the float value:
 100.91821
 100.91821
+
+
+// Program for AND, OR and XOR operation
+public class Main{
+    public static void main(String args[]){
+        int a=5;
+        int b=3;
+        System.out.println("The AND operation between a and b is : "+(a&b));
+        System.out.println("The OR operation between a and b is : "+(a|b));
+        System.out.println("The XOR operation between a and b is : "+(a^b));
+    }
+}
+
+Output:
+The AND operation between a and b is : 1
+The OR operation between a and b is : 7
+The XOR operation between a and b is : 6
