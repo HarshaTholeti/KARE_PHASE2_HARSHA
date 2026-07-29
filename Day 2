@@ -166,3 +166,26 @@ public class Main{
 Output:
 Enter your age:11
 11 is not divisible by '3' and remainder is 2
+
+
+//program to check which number is greater within two numbers.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter two numbers:");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        if(a>b){
+            System.out.println(a+" is greater");
+        } else {
+            System.out.println(b+" is greater");
+        }
+        sc.close();
+    }
+}
+
+Output:
+Enter two numbers:10
+45
+45 is greater
