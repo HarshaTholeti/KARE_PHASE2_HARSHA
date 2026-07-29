@@ -124,3 +124,24 @@ Output:
 Enter the first number:10
 Enter the second nnumber:10
 10 and 10 are equal
+
+
+//program for checking weather a person is eligible to vote or not.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your age:");
+        int age = sc.nextInt();
+        if(age>=18){
+            System.out.println("You are eligible to vote");
+        } else {
+            System.out.println("Sorry you are not eligible, You have to wait!");
+        }
+        sc.close();
+    }
+}
+
+Output:
+Enter your age:20
+You are eligible to vote
