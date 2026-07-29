@@ -145,3 +145,24 @@ public class Main{
 Output:
 Enter your age:20
 You are eligible to vote
+
+
+//program for checking whether a number is divisible by '3' or not.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your age:");
+        int a = sc.nextInt();
+        if(a/3 == 0){
+            System.out.println(a+" is divisible by \'3\'");
+        } else {
+            System.out.println(a+" is not divisible by \'3\' and remainder is "+(a%3));
+        }
+        sc.close();
+    }
+}
+
+Output:
+Enter your age:11
+11 is not divisible by '3' and remainder is 2
