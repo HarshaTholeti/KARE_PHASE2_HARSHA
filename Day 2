@@ -189,3 +189,30 @@ Output:
 Enter two numbers:10
 45
 45 is greater
+
+
+//program to check which number is greater within two numbers.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter three numbers:");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        if(a<b && a<c){
+            System.out.println(a+" is smaller than "+b+" "+c);
+        } else if(b<a && b<c){
+            System.out.println(b+" is smaller than "+a+" "+c);
+        } else {
+            System.out.println(c+" is smaller than "+a+" "+b);
+        }
+        sc.close();
+    }
+}
+
+Output:
+Enter three numbers:5583
+664
+5538
+664 is smaller than 5583 5538
