@@ -80,3 +80,23 @@ Main.java:7: error: 'else' without 'if'
         else
         ^
 1 error
+
+
+//program to find a number is 'EVEN' or 'ODD'.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number:");
+        int n = sc.nextInt();
+        if(n % 2 == 0){
+            System.out.println(n+" is EVEN");
+        } else {
+            System.out.println(n+" is ODD");
+        }
+    }
+}
+
+Output:
+Enter a number:10
+10 is EVEN
