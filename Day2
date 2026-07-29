@@ -1,0 +1,21 @@
+//program for pre and post incriment and decriment.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = a++;
+        int c = b--;
+        int d = --c;
+        int e = d++;
+        int f = e--;
+        System.out.println(f++);
+        System.out.println(a+" "+b+" "+c+" "+d+" "+e+" "+f);
+        
+    }
+}
+
+Output:
+99
+98
+100 98 98 99 97 99
