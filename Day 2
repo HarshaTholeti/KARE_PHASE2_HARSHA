@@ -216,3 +216,23 @@ Enter three numbers:5583
 664
 5538
 664 is smaller than 5583 5538
+
+
+//program for if else.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the numbers:");
+        int a = sc.nextInt();
+        if(a%3 == 0)
+            System.out.print("Hi");
+        if(a%5 == 0)
+            System.out.println("Hello");
+        sc.close();
+    }
+}
+
+Output:
+Enter the numbers:15
+HiHello
