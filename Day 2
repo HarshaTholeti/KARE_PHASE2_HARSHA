@@ -257,3 +257,25 @@ public class Main{
 Output:
 Enter the year:2004
 2004 is a leap year
+
+
+//program for checking a time is valid or not. 
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int hour = sc.nextInt();
+        int min = sc.nextInt();
+        int sec = sc.nextInt();
+        if(hour>=0 && hour<=24 && min>=0 && min<=59 && sec>=0 && sec<=59){
+            System.out.println("Valid");
+        } else {
+            System.out.println("Invalid");
+        }
+        sc.close();
+    }
+}
+
+Output:
+12 30 59
+Valid
