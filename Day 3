@@ -71,3 +71,19 @@ Enter first number:4 5
 Enter second number:3
 Enter the operator symbol:-
 2
+
+
+//program to print n natural numbers.
+import java.util.*;
+public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter the number:");
+    int n= sc.nextInt();
+    for(int i=1;i<n;i++){
+        System.out.print(i);
+    }
+}
+
+Output:
+Enter the number:10
+123456789
