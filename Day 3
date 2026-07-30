@@ -27,3 +27,47 @@ public class Main{
 Output:
 Enter a number:3
 EEE
+
+
+// i/p     o/p
+// 12 2      CSE
+// +       14
+// -       10
+// *       24
+// %       0
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first number:");
+        int a = sc.nextInt();
+        System.out.print("Enter second number:");
+        int b = sc.nextInt();
+        System.out.print("Enter the operator symbol:");
+        char c = sc.next().charAt(0);
+        switch(c){
+            case '+':
+                System.out.println(a+b);
+                break;
+            case '-':
+                System.out.println(a-b);
+                break;
+            case '*':
+                System.out.println(a*b);
+                break;
+            case '/':
+                System.out.println(a/b);
+                break;
+            case '%':
+                System.out.println(a%b);
+            default:
+                System.out.println("Invalid");
+        }
+    }
+}
+
+Output:
+Enter first number:4 5
+Enter second number:3
+Enter the operator symbol:-
+2
