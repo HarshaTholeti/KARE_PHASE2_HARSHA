@@ -1,0 +1,29 @@
+// i/p     o/p
+// 1       CSE
+// 2       ECE
+// 3       EEE
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int n = sc.nextInt();
+        switch(n){
+            case 1:
+                System.out.println("CSE");
+                break;
+            case 2:
+                System.out.println("ECE");
+                break;
+            case 3:
+                System.out.println("EEE");
+                break;
+            default:
+                System.out.println("Invalid");
+        }
+    }
+}
+
+Output:
+Enter a number:3
+EEE
