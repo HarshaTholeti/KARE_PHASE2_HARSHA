@@ -158,7 +158,7 @@ Enter the n value:5
 120
 
 
-//program to find the multiplivation of a table.
+//program to find the multiplication of a table.
 import java.util.*;
 public class Main{
     public static void main(String args[]){
