@@ -132,3 +132,27 @@ public class Main{
 Output:
 Enter the ending range:10
 1 2 5 10
+
+
+//program to find the factorial of given number.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the n value:");
+        int n = sc.nextInt();
+        int fact = 1;
+        if(n==0 || n==1){
+            fact = 1;
+        } else {
+            for(int i=1;i<=n;i++){
+                fact*=i;
+            }
+        }
+        System.out.println(fact);
+    }
+}
+
+Output:
+Enter the n value:5
+120
