@@ -276,3 +276,52 @@ Output:
 ***    ***
 ****  ****
 **********
+
+
+//program to print  combination of base - 2 and base - 3 pattern.
+// 1. base - 2
+// Add another loop for rows
+// 2. base - 3
+//i/p          o/p
+/*5             
+               *
+               **
+               ***
+               **** The first loop for rows ends here.
+               *****
+               ****
+               ***
+               **
+               *
+*/
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=0;i<n-1;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+            }
+            for(int i=0;i<n;i++){
+                for(int j=0;j<n-i;j++){
+                    System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+Output:
+5
+*
+**
+***
+****
+*****
+****
+***
+**
+*
