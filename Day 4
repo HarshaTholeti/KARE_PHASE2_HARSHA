@@ -155,3 +155,39 @@ Output:
   *****
  *****
 *****
+
+
+//program to print  combination of base - 2 and base - 1 pattern.
+//i/p          o/p
+/*5             
+               *****
+                *****
+                 *****
+                  *****
+                   *****
+*/
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i-1;j++){
+                System.out.print(" ");
+            }
+            for(int k = 0; k < n; k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        } 
+        sc.close();
+    }
+}
+
+Output:
+5
+*****
+ *****
+  *****
+   *****
+    *****
