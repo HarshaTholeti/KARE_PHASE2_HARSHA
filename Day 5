@@ -107,3 +107,32 @@ Enter number of lines:5
 10101
 01010
 10101
+
+
+//program to print Alphabet C.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of lines:");
+        int n = sc.nextInt();
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(i==0 || i==n-1 || j==0){
+                    System.out.print("C");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+Output:
+Enter number of lines:5
+CCCCC
+C    
+C    
+C    
+CCCCC
