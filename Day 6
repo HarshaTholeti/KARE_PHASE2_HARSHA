@@ -73,3 +73,31 @@ public class Main{
 Output:
 123
 for the number 123 the reverse number is 321
+
+
+// write a java program to check whether the given number is palindrome number
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int temp = n;
+        int r,rev=0;
+        while(n!=0){
+            r = n%10;
+            rev=rev*10 + r;
+            n = n/10;
+        }
+        if(temp == rev){
+            System.out.print("the given number is a palindrome");
+        }
+        else{
+            System.out.print("the given numebr is not a palindrome");
+        }
+    }
+}
+Output:
+
+121
+the given number is a palindrome
