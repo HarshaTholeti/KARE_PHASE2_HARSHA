@@ -158,3 +158,32 @@ public class Main
 Output:
 18
 18 is a Harshad number
+
+
+// write a java program to check a given number is Neon number or not.
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		int n = sc.nextInt();
+		int temp=n;
+		int square = n*n;
+		int r=0,sum=0;
+		while(square!=0){
+		    r = square%10;
+		    sum+=r;
+		    square=square/10;
+		}
+		if(temp==sum){
+		    System.out.print(temp+" is a Neon number");
+		} else {
+		    System.out.print(temp+" is not a Neon number");
+		}
+	}
+}
+
+
+Output:
+9
+9 is a Neon number
