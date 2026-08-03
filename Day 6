@@ -1,0 +1,28 @@
+// write a java program to count and print the no of odd and even digits in a number
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.print("for the number " + n  );
+    
+        int even=0,odd=0,r;
+        while(n!=0){
+            r = n%10;
+            if(r%2==0){
+                even +=1;
+                
+            }
+            else{
+                odd +=1;
+            }
+            n = n/10;
+        }
+        System.out.print(" number of even digits are   " + even + " number of odd digits are " + odd );
+    }
+}
+
+Output:
+456789456
+for the number 456789456 number of even digits are   5 number of odd digits are 4
