@@ -52,3 +52,24 @@ public class Main{
 Output:
 123456789
 for the number 123456789 number of prime digits are   4
+
+
+// write a java program to reverse the number without using the right side formation
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int r;
+        System.out.print("for the number " + n + " the reverse number is " );
+        while(n!=0){
+            r = n%10;
+            System.out.print(r);
+            n = n/10;
+        }
+    }
+}
+Output:
+123
+for the number 123 the reverse number is 321
