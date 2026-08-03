@@ -26,3 +26,29 @@ public class Main{
 Output:
 456789456
 for the number 456789456 number of even digits are   5 number of odd digits are 4
+
+
+// write a java program to count the  prine digits in the given number
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.print("for the number " + n  );
+    
+        int prime=0,i,r;
+        while(n!=0){
+            r = n%10;
+            if (r == 2 || r == 3 || r == 5 || r == 7) {
+                prime++;
+            }
+            n = n/10;
+        }
+        System.out.print(" number of prime digits are   " + prime  );
+    }
+}
+
+Output:
+123456789
+for the number 123456789 number of prime digits are   4
