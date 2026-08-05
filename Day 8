@@ -20,6 +20,33 @@ Output:
 1 2 3 4 5 
 
 
+// program to find oddcount and evencount elements in arr.
+import java.util.*;
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n=sc.nextInt();
+		int oddcount=0;
+		int evencount=0;
+		int[] arr = new int[n];
+		for(int i=0;i<n;i++){
+		    arr[i]=sc.nextInt();
+		    if(arr[i]%2==0){
+		        evencount++;
+		    } else {
+		        oddcount++;
+		    }
+		}
+		
+		System.out.print("Oddcount:"+oddcount+"\n"+"Evencount:"+evencount);
+	}
+}
+
+Output:
+5
+1 2 3 4 5
+Oddcount:3
+Evencount:2
 // program to find the sum of arr elements.
 import java.util.*;
 public class Main{
