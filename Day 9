@@ -59,3 +59,32 @@ Enter the size of array:5
 
 0 0 1 0 1
 0 0 0 1 1 
+
+
+//program to find the max element in the array.
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the size of array:");
+		int max=0;
+		int n= sc.nextInt();
+		int[] arr=new int[n];
+		for(int i=0;i<n;i++){
+		    arr[i]=sc.nextInt();
+		}
+		for(int i=1;i<n;i++){
+		    max=arr[0];
+		    if(arr[i]>=max){
+		        max=arr[i];
+		    }
+		}
+		System.out.println(max);
+	}
+}
+
+Output:
+Enter the size of array:5 1     5
+1 2 3 4 5 
+5
