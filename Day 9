@@ -88,3 +88,37 @@ Output:
 Enter the size of array:5 1     5
 1 2 3 4 5 
 5
+
+
+//program to find the  second max element in the array.
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the size of array:");
+		int max=0,smax=0;
+		int n= sc.nextInt();
+		int[] arr=new int[n];
+		for(int i=0;i<n;i++){
+		    arr[i]=sc.nextInt();
+		}
+		for(int i=1;i<n;i++){
+		    if(arr[i]>=max){
+		        max=arr[i];
+		    }
+		}System.out.println(max);
+		for(int i=0;i<n;i++){
+		    if(arr[i]>=smax && arr[i]<max){
+		        smax=arr[i];
+		    }
+		}
+		System.out.println(smax);
+	}
+}
+
+Output:
+Enter the size of array:5
+1 2 3 4 5
+5
+4
