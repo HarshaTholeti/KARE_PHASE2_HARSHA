@@ -22,3 +22,40 @@ Output:
 Enter the size of array:5
 1 2 1 3 2
 3
+
+
+//program to arrange the 0's in starting position of array.
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int zerocount=0,onecount=0;
+		System.out.print("Enter the size of array:");
+		int n=sc.nextInt();
+		int[] nums=new int[n];
+		for(int i=0;i<n;i++){
+		    nums[i]=sc.nextInt();
+		    if(nums[i]==0){
+		        zerocount+=1;
+		    } else {
+		        onecount+=1;
+		    }
+		}//to insert '0' values.
+		for(int i=0;i<zerocount;i++){
+		    nums[i]=0;
+		}//to insert '1' values.
+		for(int i=zerocount;i<n;i++){
+		    nums[i]=1;
+		}
+		for(int i=0;i<n;i++){
+		    System.out.print(nums[i]+" ");
+		}
+	}
+}
+
+Output:
+Enter the size of array:5
+
+0 0 1 0 1
+0 0 0 1 1 
