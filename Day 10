@@ -69,3 +69,34 @@ Enter the column size:2
 1 2 3
 4 5 6
 The sum of elements is:10
+
+
+//program to print the diagonal elements in a matrix.
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner  sc=new Scanner(System.in);
+		System.out.print("Enter the row and column size:");
+		int m=sc.nextInt();
+		int[][] arr=new int[m][m];
+		for(int i=0;i<m;i++){
+		    for(int j=0;j<m;j++){
+		        arr[i][j]=sc.nextInt();
+		    }
+		}
+		for(int i=0;i<m;i++){
+		    System.out.println(arr[i][i]+" ");
+		}
+		for(int i=0;i<m;i++){
+		    System.out.print(arr[i][m-1-i]+" ");
+		}
+	}
+}
+
+Output:
+Enter the row and column size:3
+1 2 3
+4 5 6
+7 8 9
+1 5 9 3 5 7 
