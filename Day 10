@@ -192,3 +192,27 @@ public class Main{
 Output:
 Java is a programming language
 5
+
+
+// program to find the vowels count and consonants count.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine().toLowerCase();
+        int vowels=0,consonants=0;
+        for(char ch:s.toCharArray()){
+            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+                vowels++;
+            } else {
+                consonants++;
+            }
+        }
+        System.out.print("Vowels count:"+vowels+"\n"+"consonants count:"+consonants);
+    }
+}
+
+Output:
+Harsha
+Vowels count:2
+consonants count:4
