@@ -152,3 +152,22 @@ Matrix after transpose:
 1 4 
 2 5 
 3 6 
+
+
+//program to print length of a string without using inbuilt function.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int c=0;
+        for(char ch:s.toCharArray()){
+            c++;
+        }
+        System.out.print(c);
+    }
+}
+
+Output:
+HI i am Harsha
+14
