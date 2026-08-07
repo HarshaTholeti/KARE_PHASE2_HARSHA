@@ -264,3 +264,29 @@ public class Main{
 Output:
 pop
 Palindrome
+
+
+//write a java program to find the distinct elements.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int[] arr=new int[256];
+        int count=0;
+        for(char ch:s.toCharArray()){
+            arr[ch]++;
+        }
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==1){
+                count++;
+            }
+        }
+        System.out.print(count);
+        
+    }
+}
+
+Output:
+Harsha
+4
