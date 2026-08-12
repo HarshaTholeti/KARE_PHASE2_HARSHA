@@ -204,3 +204,47 @@ Output:
 2
 3
 the power of 2 power 3 is 8
+
+
+//TAIL Recursion
+import java.util.*;
+public class Main
+{
+    static void fun(int n){
+        if(n!=0){
+            System.out.print(n);
+            fun(n-1);
+        }
+    }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		fun(n);
+	}
+}
+
+Output:
+4
+4321
+
+
+//HEAD Recursion
+import java.util.*;
+public class Main
+{
+    static void fun(int n){
+        if(n!=0){
+            fun(n-1);
+            System.out.print(n);
+        }
+    }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		fun(n);
+	}
+}
+
+Output:
+4
+1234
