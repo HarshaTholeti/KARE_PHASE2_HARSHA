@@ -87,3 +87,38 @@ class Main{
 Output:
 4
 Power Of Two
+
+
+// write a java program to check a specific number is power of 2 or not by using function with no argument with return type.
+import java.util.*;
+class Main{
+   boolean am(){
+       Scanner sc= new Scanner(System.in);
+       int n=sc.nextInt();
+       int temp=n,c=0;
+       int square=n*n;
+       while(n!=0){
+           n=n/10;
+           c+=1;
+       }
+       int power=(int)Math.pow(10,c);
+       if(square%power==temp){
+           return true;
+       }  else {
+           return false;
+       }
+   } 
+   public static void main(String args[]){
+       Main s=new Main();
+       boolean ans=s.am();
+       if(ans){
+           System.out.println("Automorphic number");
+       } else {
+           System.out.println("Not an Automorphic number");
+       }
+   }
+}
+
+Output:
+8
+Not an Automorphic number
