@@ -248,3 +248,28 @@ public class Main
 Output:
 4
 1234
+
+
+// progeram to find factorial of a number by using recursion.
+import java.util.*;
+public class Main{
+    static int factorial(int n){
+        int fact=1;
+        if(n==0 || n==1){
+            fact = 1;
+        } else {
+            fact=n*factorial(n-1);
+        }
+        return fact;
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int ans = factorial(n);
+        System.out.println(ans);
+    }
+}
+
+Output:
+5
+120
