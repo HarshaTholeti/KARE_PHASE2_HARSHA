@@ -122,3 +122,32 @@ class Main{
 Output:
 8
 Not an Automorphic number
+
+
+// write a java program to check a specific number is perfect cube or not or not by using function with argument with return type.
+import java.util.*;
+class Main{
+    boolean percube(int n){
+        for(int i=1;i<=n/2;i++){
+            if(i*i*i==n){
+                return true;
+            }
+        }
+            return false;
+    }
+   public static void main(String args[]){
+       Main s=new Main();
+       Scanner sc = new Scanner (System.in);
+       int n=sc.nextInt();
+       boolean ans = s.percube(n);
+       if(ans){
+           System.out.println("Perfect Cube");
+       } else {
+           System.out.println("Not a Perfect Cube");
+       }
+   }
+}
+
+Output:
+64
+Perfect Cube
