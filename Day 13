@@ -177,3 +177,30 @@ Output:
 5
 2 4 6 18 24
 the avg is 16.00
+
+
+//program to find the power of a given number without using inbuilt method 
+import java.util.*;
+public class Main{
+    public int Power(int a, int b){
+        int pow=1;
+        int i=0;
+        for(i=0;i<b;i++){
+            pow*=a;
+        }
+        return pow;
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n =sc.nextInt();
+        int m = sc.nextInt();
+        Main obj = new Main();
+        int res = obj.Power(n,m);
+        System.out.print("the power of "+ n + " power " + m + " is " + res);
+    }
+    }
+
+Output:
+2
+3
+the power of 2 power 3 is 8
