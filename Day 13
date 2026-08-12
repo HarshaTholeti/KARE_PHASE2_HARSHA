@@ -1,0 +1,34 @@
+//Multi level inheritance
+class GrandFather{
+    void gen1(){
+        System.out.println("Money");
+    }
+}
+class Father extends GrandFather{
+    void gen21(){
+        System.out.println("Gold");
+    }
+}
+class Mother extends Father{
+    void gen22(){
+        System.out.println("silver");
+    }
+}
+class Son extends Father{
+    void gen3(){
+        System.out.println("Bronze");
+    }
+}
+class Main{
+    public static void main(String args[]){
+        System.out.println("Son class :");
+        Son s=new Son();
+        s.gen3();
+        s.gen21();
+        s.gen1();
+        System.out.println("Mother class :");
+        Mother m=new Mother();
+        m.gen22();
+        m.gen21();
+    }
+}
