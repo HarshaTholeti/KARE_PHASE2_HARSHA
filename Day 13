@@ -32,3 +32,32 @@ class Main{
         m.gen21();
     }
 }
+
+
+// write a java program to check a specific number is perfect square or not by using function with no argument no return type.
+import java.util.*;
+class Main{
+    void ps(){
+        Scanner sc = new Scanner (System.in);
+        int n=sc.nextInt();
+        int flag=0;
+        for(int i=1;i<n;i++){
+            if(i*i==n){
+                flag=1;
+                System.out.println("Perfect Square");
+                break;
+            }
+        }
+        if(flag==0){
+            System.out.println("Not a perfect square");
+        }
+    }
+    public static void main(String args[]){
+        Main s=new Main();
+        s.ps();
+    }
+}
+
+Output:
+9
+Perfect Square
