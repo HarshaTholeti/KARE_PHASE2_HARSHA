@@ -124,3 +124,38 @@ Output:
 h
 4 4.5
 4.5 h
+
+
+// by using types of parameters we 0are Overloading the method
+import java.util.*;
+public class Main
+{
+    static void print(int a, float b){
+        System.out.println(a+" "+b);
+    }
+    static void print(float b,char c){
+        System.out.println(b+" "+c);
+    }
+    static void print(char c, double d){
+        System.out.println(c+" "+d);
+    }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a=sc.nextInt();
+		float b=sc.nextFloat();
+		char c=sc.next().charAt(0);
+		double d = sc.nextDouble();
+		print(a,b);
+		print(b,c);
+		print(c,d);
+	}
+}
+
+Output:
+5
+5.0
+c
+7.00
+5 5.0
+5.0 c
+c 7.0
