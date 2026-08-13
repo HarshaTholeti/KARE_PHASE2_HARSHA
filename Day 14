@@ -1,0 +1,15 @@
+import java.util.*;
+public class Student{
+    String name;
+    int reg;
+    int num;
+    Student(){
+        System.out.println(name);
+    }
+    public static void main(String args[]){
+        Student s=new Student();
+    }
+}
+
+Output:
+null
