@@ -96,3 +96,31 @@ The sum of first two numbers is
 3
 The sum of three numbers is
 6
+
+
+// by using types of parameters we 0are Overloading the method
+import java.util.*;
+public class Main
+{
+    static void print(int a, float b){
+        System.out.println(a+" "+b);
+    }
+    static void print(float b,char c){
+        System.out.println(b+" "+c);
+    }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a=sc.nextInt();
+		float b=sc.nextFloat();
+		char c=sc.next().charAt(0);
+		print(a,b);
+		print(b,c);
+	}
+}
+
+Output:
+4
+4.5
+h
+4 4.5
+4.5 h
