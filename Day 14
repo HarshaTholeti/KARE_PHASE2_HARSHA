@@ -36,3 +36,32 @@ public class Student{
 
 Output:
 Harsha
+
+
+import java.util.*;
+public class Student{
+    String name;
+    int reg;
+    int num;
+    Student(String name,int reg,int num){
+        this.name=name;
+        this.reg=reg;
+        this.num=num;
+    }
+    Student(Student obj){
+        obj.reg=0;
+    }
+    void display(){
+        System.out.println(reg);
+    }
+    public static void main(String args[]){
+        Student s=new Student("Harsha",0065,91);
+        Student sc=new Student(s);
+        s.display();
+        
+    }
+}
+
+Output:
+0
+
