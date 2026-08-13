@@ -13,3 +13,26 @@ public class Student{
 
 Output:
 null
+
+
+import java.util.*;
+public class Student{
+    String name;
+    int reg;
+    int num;
+    Student(String name,int red,int num){
+        this.name=name;
+        this.reg=reg;
+        this.num=num;
+    }
+    void display(){
+        System.out.println(name);
+    }
+    public static void main(String args[]){
+        Student s=new Student("Harsha",0065,91);
+        s.display();
+    }
+}
+
+Output:
+Harsha
