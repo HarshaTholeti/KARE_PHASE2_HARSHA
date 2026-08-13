@@ -65,3 +65,34 @@ public class Student{
 Output:
 0
 
+
+// by using no of parameters we 0are Overloading the method
+import java.util.*;
+public class Main
+{
+    static void add(int a, int b){
+        System.out.println(a+b);
+    }
+    static void add(int a, int b, int c){
+        System.out.println(a+b+c);
+    }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		System.out.println("The sum of first two numbers is");
+		add(a,b);
+		System.out.println("The sum of three numbers is");
+		add(a,b,c);
+	}
+}
+
+Output:
+1
+2
+3
+The sum of first two numbers is
+3
+The sum of three numbers is
+6
