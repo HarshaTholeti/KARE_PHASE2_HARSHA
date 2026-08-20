@@ -104,3 +104,127 @@ Under flow
 Invalid4
 56 89 90 5
 Exit
+
+
+Queue with array
+import java.util.*;
+class Queue {
+    int front,rear;
+    int n;
+    int queue[];
+    Queue(int n){
+        this.n=n;
+        queue = new int[n];
+        front=0;
+        rear=-1;
+    }
+    void enqueue(int data){
+        if(rear==n-1){
+            System.out.println("Queue is full");
+            return;
+        }
+        rear++;
+        queue[rear]=data;
+    }
+    int dequeue(){
+        if(front>rear){
+            System.out.println("Queue is empty");
+            return -1;
+        }
+        return queue[front++];
+    }
+    void display() {
+        if(front > rear){
+            System.out.println("Queue is empty");
+            return;
+        }
+        for(int i=front;i<=rear;i++){
+            System.out.print(queue[i]+" ");
+        }
+        System.out.println();
+        return;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n=sc.nextInt();
+		Queue que=new Queue(n);
+		while(true){
+		    System.out.println("\n1.Enqueue");
+		    System.out.println("2.Dequeue");
+		    System.out.println("3.Display");
+		    System.out.println("4.exit");
+		    int value=sc.nextInt();
+		    switch(value){
+		        case 1:
+		            int a=sc.nextInt();
+		            que.enqueue(a);
+		            break;
+		        case 2:
+		            que.dequeue();
+		            break;
+		        case 3:
+		            que.display();
+		            break;
+		        case 4:
+		            return;
+		        default:
+		            System.out.println("Invalid input");
+		    }
+		}
+		
+	}
+}
+
+Output:
+5
+
+1.Enqueue
+2.Dequeue
+3.Display
+4.exit
+1
+1
+
+1.Enqueue
+2.Dequeue
+3.Display
+4.exit
+1
+2
+
+1.Enqueue
+2.Dequeue
+3.Display
+4.exit
+1
+3
+
+1.Enqueue
+2.Dequeue
+3.Display
+4.exit
+1
+4
+
+1.Enqueue
+2.Dequeue
+3.Display
+4.exit
+1
+5
+
+1.Enqueue
+2.Dequeue
+3.Display
+4.exit
+3
+1 2 3 4 5 
+
+1.Enqueue
+2.Dequeue
+3.Display
+4.exit
+4
