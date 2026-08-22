@@ -209,3 +209,158 @@ h
 h 5
 6.5321 5
 6.5 6.5321
+
+
+// Write a Java program to demonstrate constructor overloading
+// using different numbers of parameters.
+
+import java.util.*;
+
+public class Student {
+
+    String name;
+    int age;
+    int marks;
+
+    Student() {
+        name = "Unknown";
+        age = 0;
+        marks = 0;
+    }
+
+    Student(String name) {
+        this.name = name;
+        age = 0;
+        marks = 0;
+    }
+
+    Student(String name, int age, int marks) {
+        this.name = name;
+        this.age = age;
+        this.marks = marks;
+    }
+
+    void display() {
+        System.out.println(name + " " + age + " " + marks);
+    }
+
+    public static void main(String args[]) {
+
+        Student s1 = new Student();
+        Student s2 = new Student("Harsha");
+        Student s3 = new Student("Harsha", 21, 91);
+
+        s1.display();
+        s2.display();
+        s3.display();
+    }
+}
+
+Output:
+Unknown 0 0
+Harsha 0 0
+Harsha 21 91
+
+
+// Write a Java program to overload the display() method
+// using different types of parameters.
+
+import java.util.*;
+
+public class Main {
+
+    static void display(int a) {
+        System.out.println("Integer: " + a);
+    }
+
+    static void display(float a) {
+        System.out.println("Float: " + a);
+    }
+
+    static void display(char a) {
+        System.out.println("Character: " + a);
+    }
+
+    static void display(double a) {
+        System.out.println("Double: " + a);
+    }
+
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        float b = sc.nextFloat();
+        char c = sc.next().charAt(0);
+        double d = sc.nextDouble();
+
+        display(a);
+        display(b);
+        display(c);
+        display(d);
+    }
+}
+
+Output:
+10
+5.5
+H
+25.75
+Integer: 10
+Float: 5.5
+Character: H
+Double: 25.75
+
+
+// Write a Java program to demonstrate a copy constructor
+// by copying the values of one Student object into another object.
+
+import java.util.*;
+
+public class Student {
+
+    String name;
+    int reg;
+    int marks;
+
+    Student(String name, int reg, int marks) {
+        this.name = name;
+        this.reg = reg;
+        this.marks = marks;
+    }
+
+    Student(Student obj) {
+        this.name = obj.name;
+        this.reg = obj.reg;
+        this.marks = obj.marks;
+    }
+
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Register Number: " + reg);
+        System.out.println("Marks: " + marks);
+    }
+
+    public static void main(String args[]) {
+
+        Student s1 = new Student("Harsha", 65, 91);
+
+        Student s2 = new Student(s1);
+
+        System.out.println("Original Student:");
+        s1.display();
+
+        System.out.println("Copied Student:");
+        s2.display();
+    }
+}
+
+output:
+Original Student:
+Name: Harsha
+Register Number: 65
+Marks: 91
+Copied Student:
+Name: Harsha
+Register Number: 65
+Marks: 91
