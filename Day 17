@@ -16,3 +16,20 @@ public class Main
 
 Output:
 [10, 20, 30, 2.5, G, Chandu]
+
+
+//program to create a ArrayList with Integer datatype
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		ArrayList<Integer> obj=new ArrayList<>();
+		obj.add(10);
+		obj.add(20);
+		obj.add(30);
+		System.out.print(obj);
+	}
+}
+
+Output:
+[10, 20, 30]
