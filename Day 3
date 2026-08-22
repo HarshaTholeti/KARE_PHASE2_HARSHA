@@ -212,3 +212,78 @@ Enter the n value:2
 2 * 8 = 16
 2 * 9 = 18
 2 * 10 = 20
+
+
+// program to check whether the given number is even or odd using switch.
+
+import java.util.*;
+
+public class Main {
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the number:");
+        int n = sc.nextInt();
+
+        switch(n % 2) {
+
+            case 0:
+                System.out.println("Even");
+                break;
+
+            case 1:
+            case -1:
+                System.out.println("Odd");
+                break;
+
+            default:
+                System.out.println("Invalid");
+        }
+    }
+}
+
+Output:
+Enter the number:7
+Odd
+
+
+// program to find the sum of even numbers and odd numbers
+// separately between the given starting and ending range.
+
+import java.util.*;
+
+public class Main {
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the starting range:");
+        int s = sc.nextInt();
+
+        System.out.print("Enter the ending range:");
+        int n = sc.nextInt();
+
+        int evenSum = 0;
+        int oddSum = 0;
+
+        for(int i = s; i <= n; i++) {
+
+            if(i % 2 == 0) {
+                evenSum = evenSum + i;
+            }
+            else {
+                oddSum = oddSum + i;
+            }
+        }
+
+        System.out.println("Sum of even numbers is " + evenSum);
+        System.out.println("Sum of odd numbers is " + oddSum);
+    }
+}
+
+Output:
+Enter the starting range:1
+Enter the ending range:10
+Sum of even numbers is 30
+Sum of odd numbers is 25
