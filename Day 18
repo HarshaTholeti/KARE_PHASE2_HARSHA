@@ -53,3 +53,38 @@ Output:
 1 2 3 4 5
 4
 Element found at index 3
+
+
+//program for binary search
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        int target=sc.nextInt();
+        int left=0;
+        int right=n-1;
+        while(left<right){
+            int mid=left+(right-left)/2;
+            if(arr[mid]==target){
+                System.out.println("Element fount at index "+mid);
+                return;
+            } else if(arr[mid]<target){
+                left=mid+1;
+            } else {
+                right=mid-1;
+            }
+        }
+        System.out.println("Element not found");
+    }
+}
+
+Output:
+7
+10 52 56 25 411  34 89
+34
+Element fount at index 5
