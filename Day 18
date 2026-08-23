@@ -25,3 +25,31 @@ public class Main{
 Output:
 99
 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 
+
+
+//program to find an element in an array by using linear search.
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] a=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+        int target=sc.nextInt();
+        for(int i=0;i<n;i++){
+            if(a[i]==target){
+                System.out.println("Element found at index "+i);
+                return;
+            }
+        }
+        System.out.println("Element not found");
+    }
+}
+
+Output:
+5
+1 2 3 4 5
+4
+Element found at index 3
