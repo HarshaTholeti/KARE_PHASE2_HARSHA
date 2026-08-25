@@ -30,3 +30,35 @@ Output:
 Enter the size of array :5
 100 25 33 5 7
 7 5 33 25 100 
+
+
+//program for bubble sort
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the size of array : ");
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n-1-i;j++){
+                if(arr[j]>arr[j+1]){
+                    int temp=arr[j+1];
+                    arr[j+1]=arr[j];
+                    arr[j]=temp;
+                }
+            }
+        }
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
+
+Output:
+Enter the size of array : 5
+20 15 18 25       25 21  5 7
+5 7 15 20 25 
